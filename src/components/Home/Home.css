@@ -23,11 +23,11 @@
 }
 
 .active {
-    color: black;
+    color: #f72851;
 
 }
 
 .inActive {
-    color: #f72851;
+    color: black;
     text-decoration: none;
 }

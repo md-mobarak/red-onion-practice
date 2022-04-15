@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormControl, InputGroup } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+
+import Food from '../Food/Food/Food';
 import './Home.css'
 
 const Home = () => {
@@ -26,11 +27,7 @@ const Home = () => {
 
             </div >
             <section className='d-flex justify-content-center mt-5'>
-                <div>
-                    <NavLink className={({ isActive }) => (isActive ? 'active me-5' : 'inActive me-5')} to="/breakfast">BreakFast</NavLink>
-                    <NavLink className={({ isActive }) => (isActive ? 'active me-5' : 'inActive me-5')} to="/lunch">Lunch</NavLink>
-                    <NavLink className={({ isActive }) => (isActive ? 'active me-5' : 'inActive me-5')} to="/dinner">Dinner</NavLink>
-                </div>
+                <Food></Food>
             </section>
         </div>
 

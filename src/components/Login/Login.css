@@ -1,0 +1,22 @@
+.login-bg {
+    background-image: url(../../image/bannerbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+
+}
+
+.login-btn {
+    padding: 10px 134px;
+    background-color: #f72851;
+    border: 0;
+}
+
+.login-btn:hover {
+    background-color: #f72851;
+}
+
+.checkbox {
+    color: #f72851;
+}
