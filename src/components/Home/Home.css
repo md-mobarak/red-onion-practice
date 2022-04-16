@@ -31,3 +31,18 @@
     color: black;
     text-decoration: none;
 }
+
+.special {
+    animation-name: leFadeInLeft
+}
+
+@keyframes leFadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1
+    }
+}

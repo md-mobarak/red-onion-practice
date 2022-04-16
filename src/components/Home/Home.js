@@ -11,7 +11,7 @@ const Home = () => {
             <div className='home-bg'>
                 <div className=' home-info d-flex justify-content-center align-items-center'>
                     <div>
-                        <h1>Best Food Waiting For Your Belly</h1>
+                        <h1 className='special'>Best Food Waiting For Your Belly</h1>
 
                         <InputGroup className="mb-3">
                             <FormControl className='search'

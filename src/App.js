@@ -8,6 +8,7 @@ import Cart from './components/Cart/Cart';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Lunch from './components/Food/Lunch/Lunch';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/cart' element={<Cart></Cart>}></Route>
-        <Route path='/' element={<Lunch></Lunch>}></Route>
+        <Route path='/cart' element={<RequireAuth>
+          <Cart></Cart>
+        </RequireAuth>}></Route>
+
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>
